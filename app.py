@@ -87,4 +87,5 @@ def delete_version(source_name: str) -> str:
         return f'version {version_to_delete} deleted'
 
 
-app.run(host="0.0.0.0", port=5000, debug=True)
+if __name__ == '__main__':
+    app.run(host="0.0.0.0", port=5000, debug=True)
