@@ -6,14 +6,15 @@ and conduct simple modifications on the data extracted from specific columns in 
 
 ## Running the App Locally
 ### Steps:
-1. Clone the repo
-2. Run `pip install -r requirements.txt`
-3. Run the app either via your IDE or by using the command `python app.py`
+1. Clone the repository: `git clone https://github.com/NaomiKriger/tables_scraper.git`
+2. Navigate to the project directory
+3. Install the required dependencies: `pip install -r requirements.txt`
+4. Run the app either via your IDE or by using the command `python app.py`
 
 ## Running the App on Docker
 ### Steps:
-1. Clone the repo 
-2. Access the repo's path via terminal
+1. Clone the repository 
+2. Navigate to the project directory
 3. Run the following commands:
 
 `docker build -t <name:version> .` e.g. `docker build tablesscraper:1.0 .`
@@ -23,7 +24,7 @@ and conduct simple modifications on the data extracted from specific columns in 
 To stop the container run `docker stop <first 4 container's characters>`
 
 ## Endpoints
-###GET endpoints:
+### GET endpoints:
 
 ---
 home page
@@ -32,7 +33,7 @@ home page
 
 ---
 pull all non-previously-seen versions from the web source and updates local records:
-`http://127.0.0.1:5000/back_fill_versions/wabetainfo`
+`http://127.0.0.1:5000/back_fill_versions/<source>`
 
 ---
 show all local records:
