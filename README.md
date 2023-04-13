@@ -17,8 +17,8 @@ and conduct simple modifications on the data extracted from specific columns in 
 2. Navigate to the project directory
 3. Run the following commands:
 
-`docker build -t <name:version> .` e.g. `docker build tablesscraper:1.0 .`
-   
+`docker build -t <name:version> .` e.g. `docker build -t tablesscraper:1.0 .`
+
 `docker run -d -p <chosen_machine's_port:app's_port> <name:version> ` e.g. `docker run -d -p 5000:5000 tablesscraper:1.0`
 
 To stop the container run `docker stop <first 4 container's characters>`
